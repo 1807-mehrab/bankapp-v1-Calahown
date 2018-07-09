@@ -7,7 +7,7 @@ public class Account implements Serializable {
     private static final long serialVersionUID = 1L;
     private UUID accountnumber;
     private double balance;
-    private Customer customer;
+    public Customer customer;
 
     public UUID getAccountNumber() {
         return accountnumber;

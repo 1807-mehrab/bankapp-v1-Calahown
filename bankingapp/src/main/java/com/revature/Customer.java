@@ -5,7 +5,7 @@ import java.util.*;
 
 public class Customer implements Serializable {
     String name;
-    private List<Account> accounts;
+    private ArrayList<Account> accounts = new ArrayList<Account>();
     private static final long serialVersionUID = 1L;
 
     public String getName() {

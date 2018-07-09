@@ -12,12 +12,12 @@ public class Main {
             System.out.println("Hello, are you an existing customer? (y/n)");
             System.out.println("Type quit to exit at anytime.");
             input = sc.nextLine();
-            if (input == "y" || input == "Y") {
+            if (input.equals("y") || input.equals("Y")) {
                 existingCustomer();
-            } else if (input == "n" || input == "N") {
+            } else if (input.equals("n") || input.equals("N")) {
                 System.out.println("Would you like to create an account? (y/n)");
                 input = sc.nextLine();
-                if (input == "y" || input == "Y") {
+                if (input.equals("y") || input.equals("Y")) {
                     System.out.println("What name would you like under the account?");
                     input = sc.nextLine();
                     Customer customer = new Customer(input);
@@ -25,11 +25,11 @@ public class Main {
                     System.out.println(customer.displayAccountNumber(0));
                     existingCustomer(customer);
                     quit = true;
-                } else if (input == "n" || input == "N" || input == "quit") {
+                } else if (input.equals("n") || input.equals("N") || input.equals("quit")) {
                     System.out.println("goodbye");
                     quit = true;
                 }
-            } else if(input == "quit") {
+            } else if(input.equals("quit")) {
                 System.out.println("goodbye");
                 quit = true;
             } else {
